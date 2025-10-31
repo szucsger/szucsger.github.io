@@ -1,0 +1,267 @@
+body {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  color: #c0c0c0;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+  min-height: 200px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  color: white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Current weather styles */
+
+#currentWeather .card-body {
+  padding: 20px;
+}
+
+#currentWeather h2 {
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#currentWeather h5 {
+  color: #e0e0e0;
+  margin-bottom: 15px;
+}
+
+#currentWeather p {
+  color: #c0c0c0;
+}
+
+/* Hourly forecast styles */
+
+.hourly-scroll {
+  padding: 10px 0;
+  /* Custom scrollbar styling */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+
+/* Webkit scrollbar (Chrome, Safari, Edge) */
+.hourly-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.hourly-scroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.hourly-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hourly-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.hour-card {
+  min-width: 70px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.hour-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+.hour-card div {
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+
+.hour-card small {
+  display: block;
+  color: #e0e0e0;
+}
+
+/* Input styling */
+#searchInput {
+  padding: 15px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+#searchInput::placeholder {
+  color: #c0c0c0;
+}
+
+#searchInput:focus {
+  background: rgba(255, 255, 255, 0.25) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25) !important;
+  outline: none !important;
+  color: white !important;
+}
+
+/* City dropdown styling */
+#cityDropdown {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 15px !important;
+  backdrop-filter: blur(10px) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2) !important;
+  overflow: hidden !important;
+}
+
+.list-group-item {
+  background: transparent !important;
+  border: none !important;
+  color: white !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.list-group-item:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+}
+
+.list-group-item:last-child {
+  border-bottom: none !important;
+}
+
+/* Stronger input styling to override Bootstrap after value change */
+input#searchInput.form-control {
+  padding: 15px !important;
+  margin-bottom: 20px !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  border-radius: 15px !important;
+  backdrop-filter: blur(10px) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+}
+
+input#searchInput.form-control::placeholder {
+  color: #c0c0c0 !important;
+}
+
+input#searchInput.form-control:focus {
+  background: rgba(255, 255, 255, 0.25) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25) !important;
+  outline: none !important;
+  color: white !important;
+}
+
+/* Air Quality styling */
+.aqi-display {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.aqi-value {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  line-height: 50px;
+}
+
+.aqi-1 {
+  background: #00e400;
+  color: white;
+} /* Jó */
+.aqi-2 {
+  background: #ffff00;
+  color: black;
+} /* Közepes */
+.aqi-3 {
+  background: #ff7e00;
+  color: white;
+} /* Rossz */
+.aqi-4 {
+  background: #ff0000;
+  color: white;
+} /* Nagyon rossz */
+.aqi-5 {
+  background: #8f3f97;
+  color: white;
+} /* Veszélyes */
+
+/* Seven day forecast styles */
+#sevenDayForecast.card {
+  min-height: 600px;
+  height: auto;
+}
+
+.daily-forecast-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px 0 20px 0;
+  height: 100%;
+}
+
+.day-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  flex: 1;
+  min-height: 60px;
+}
+
+.day-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.day-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.weather-info .weather-icon {
+  font-size: 1.5rem;
+}
+
+.weather-info .temp {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
