@@ -25,6 +25,11 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "assets"
               }
             ],
             "styles": ["node_modules/bootstrap/dist/css/bootstrap.css", "src/styles.scss"]
