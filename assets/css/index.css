@@ -44,7 +44,7 @@
 /* Service Cards */
 .service-card {
   position: relative;
-  min-height: 230px;
+  min-height: 280px;
   border: 1px solid #dee2e6;
   overflow: hidden;
   border-radius: 3px;
@@ -52,12 +52,18 @@
 
 .service-card .body {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .service-card .body img.icon {
   margin-top: 40px;
   width: 55px;
   margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   -webkit-transition: all, 0.3s;
   transition: all, 0.3s;
 }
@@ -76,6 +82,9 @@
   visibility: hidden;
   -webkit-transition: all, 0.3s;
   transition: all, 0.3s;
+  padding: 0 5px;
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -92,7 +101,7 @@
 }
 
 .service-card:hover .body .subtitle {
-  bottom: 7px;
+  bottom: 15px;
   opacity: 1;
   visibility: visible;
 }
@@ -1184,4 +1193,10 @@ pre .code {
 
 .portfolio-card:hover iframe.portfolio-card-img {
   transform: scale(1.02);
+}
+
+/* TODO App img hover effect to match iframe behavior */
+.portfolio-card:hover img.portfolio-card-img {
+  transform: scale(1.02);
+  border-radius: 8px;
 }
