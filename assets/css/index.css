@@ -306,7 +306,6 @@
   padding: 4px;
   width: 90px;
   height: 90px;
-  border-radius: 50%;
 }
 
 .testimonial-card-body {
@@ -633,12 +632,12 @@ pre .code {
 }
 
 .custom-navbar.affix {
-  background: #fff;
-  border-bottom: 1px solid rgba(222, 226, 230, 0.34);
+  background: transparent;
 }
 
 .custom-navbar.affix .logo {
-  color: #695aa6;
+  color: #343a40;
+  font-weight: 600;
 }
 
 .custom-navbar.affix .container {
@@ -646,13 +645,14 @@ pre .code {
 }
 
 .custom-navbar.affix .nav .item .link {
-  color: #6c757d;
+  color: #343a40;
+  font-weight: 500;
 }
 
 .custom-navbar.affix .hamburger-inner,
 .custom-navbar.affix .hamburger-inner::before,
 .custom-navbar.affix .hamburger-inner::after {
-  background: #6c757d;
+  background: #343a40;
 }
 
 @media (min-width: 768px) {
