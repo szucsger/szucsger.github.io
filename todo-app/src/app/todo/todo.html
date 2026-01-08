@@ -1,0 +1,28 @@
+<div class="pt-3 todo-app">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div id="header" style="background-image: url('./images/header_background.png');">
+                <h1 class="text-center mb-5">Todo App</h1>
+                <div class="input-group">
+                    <input type="text" [value]="newTodoText()" (input)="newTodoText.set($event.target.value)"
+                        placeholder="Add new todo" class="form-control">
+                    <button (click)="addTodo()" class="btn btn-success btn-sm">Add</button>
+                </div>
+            </div>
+            <div id="main">
+                <div *ngFor="let todo of todos()" class="todo-item mb-3" [ngClass]="{'completed': todo.completed}">
+                    <div class="todo-content">
+                        <div class="todo-text">{{todo.text}}</div>
+                        <small class="text-muted todo-date">{{todo.created | date:'yyyy.MM.dd HH:mm'}}</small>
+                    </div>
+                    <div class="todo-actions">
+                        <button (click)="toggleComplete(todo.id)"
+                            [ngClass]="todo.completed ? 'btn btn-success' : 'btn btn-warning'">✓</button>
+                        <button (click)="deleteTodo(todo.id)" class="btn btn-danger">🗑️</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

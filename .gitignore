@@ -1,0 +1,18 @@
+# Build output
+todo-app-build/
+todo-app/dist/
+
+# Node modules
+node_modules/
+
+# IDE files
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp

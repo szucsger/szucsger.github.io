@@ -1,0 +1,193 @@
+.todo-app {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  min-height: 100vh;
+  padding: 20px 0;
+  margin: 0 calc(-50vw + 50%);
+  width: 100vw;
+  position: relative;
+
+  #main {
+    background: #232526; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #414345,
+      #232526
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #414345,
+      #232526
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px 0px 15px 15px;
+    margin-bottom: 20px;
+    display: block;
+    min-height: 600px;
+    padding: 20px;
+    box-shadow: 2px 2px 0px rgba(65, 67, 69, 0.8), 2px 2px 0px rgba(56, 58, 60, 0.6),
+      2px 2px 0px rgba(45, 47, 48, 0.4), 2px 2px 0px rgba(35, 37, 38, 0.2);
+  }
+  #header {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0px 0px;
+    margin-bottom: 0;
+    display: block;
+    box-shadow: 2px 2px 0px rgba(65, 67, 69, 0.8), 2px 2px 0px rgba(56, 58, 60, 0.6),
+      2px 2px 0px rgba(45, 47, 48, 0.4), 2px 2px 0px rgba(35, 37, 38, 0.2);
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .input-group {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    overflow: hidden;
+    max-width: 90%;
+    margin: 0 auto;
+
+    input {
+      border: none;
+      padding: 15px 20px;
+      font-size: 16px;
+
+      &:focus {
+        box-shadow: none;
+        border: none;
+      }
+    }
+
+    button {
+      border: none;
+      padding: 15px 25px;
+      background: linear-gradient(45deg, #28a745, #20c997);
+      color: white;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      width: 140px;
+
+      &:hover {
+        background: linear-gradient(45deg, #218838, #1fa187);
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  .todo-item {
+    border-radius: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: none !important;
+    overflow: hidden;
+    min-height: 70px;
+    display: flex !important;
+    align-items: stretch !important;
+    background: linear-gradient(135deg, #5a5d60, #3e4142);
+    color: white;
+    max-width: 95%;
+    margin: 0 auto;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    &.completed {
+      background: linear-gradient(135deg, #6c757d, #495057);
+      opacity: 0.8;
+
+      .todo-text {
+        text-decoration: line-through;
+        color: #f8f9fa;
+      }
+
+      .todo-date {
+        color: #adb5bd !important;
+      }
+    }
+
+    .todo-content {
+      flex-grow: 1;
+      padding: 15px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .todo-text {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    .todo-date {
+      font-size: 12px;
+      color: white !important;
+      margin-top: 4px;
+    }
+
+    .todo-actions {
+      display: flex;
+      gap: 0;
+      align-self: stretch;
+      align-items: stretch;
+
+      button {
+        border: none;
+        border-radius: 0 !important;
+        padding: 0 20px;
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        transition: all 0.3s ease;
+        min-width: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.btn-success {
+          background: linear-gradient(45deg, #28a745, #20c997);
+        }
+
+        &.btn-warning {
+          background: linear-gradient(45deg, #28a745, #20c997);
+        }
+
+        &.btn-danger {
+          background: linear-gradient(45deg, #4299e1, #3182ce);
+        }
+
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        &:first-child {
+          border-top-left-radius: 0 !important;
+          border-bottom-left-radius: 0 !important;
+        }
+
+        &:last-child {
+          border-top-right-radius: 40px !important;
+          border-bottom-right-radius: 40px !important;
+        }
+      }
+    }
+  }
+}

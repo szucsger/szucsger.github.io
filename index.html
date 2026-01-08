@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Szücs Gergely</title>
+    <!-- font icons -->
+
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--Custom Styles -->
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">Szücs Gergely</a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home" data-translate="nav_home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about" data-translate="nav_about">Rólam</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#portfolio" data-translate="nav_portfolio">Portfolio</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact" data-translate="nav_contact">Kapcsolat</a>
+                </li>
+                <li class="item">
+                    <button id="langToggle" class="btn btn-sm btn-outline-light"
+                        style="border: 1px solid #fff; padding: 5px 15px;">
+                        <span id="langIcon">🇬🇧 EN</span>
+                    </button>
+                </li>
+                <li class="item">
+                    <button id="darkModeToggle" class="btn btn-sm btn-outline-light"
+                        style="border: 1px solid #fff; padding: 5px 15px;">
+                        <span id="darkModeIcon">🌙</span>
+                    </button>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up" data-translate="header_greeting">Hello!</span>
+                <span class="down" data-translate="header_name">A nevem <br> Szücs Gergely</span>
+            </h1>
+            <p class="header-subtitle" data-translate="header_role">FRONTEND Fejlesztő</p>
+
+            <!-- <button class="btn btn-primary">Visit My Works</button> -->
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/cartoon_man.png" class="about-img"
+                        alt="Szücs Gergely - Frontend fejlesztő portfólió kép">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle" data-translate="about_subtitle">Ki vagyok én?</p>
+                    <h2 class="section-title mb-3" data-translate="about_title">Rólam</h2>
+                    <p data-translate="about_description">
+                        Több területen szereztem gyakorlati tapasztalatot (adminisztráció, gyártáselőkészítés,
+                        ügyfélszolgálat), és jelenleg a frontend/IT területen bővítem a tudásomat.
+                        <br>Gyakorlatias, precíz és rendszerszemléletű vagyok; szeretek működő, egyszerű megoldásokat
+                        létrehozni és gyorsan
+                        alkalmazkodom új feladatokhoz. Technikai ismereteim közé tartozik a HTML, CSS, JavaScript,
+                        TypeScript és Angular.
+                    </p>
+                    <a id="cvLink" href="assets/CV/Szucs_Gergely_cv_hu.pdf"
+                        class="btn-rounded btn btn-outline-primary mt-4" target="_blank"
+                        data-translate="about_cv_button">Önéletrajz megtekintése</a>
+                </div>
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+    <!-- service section -->
+    <section class="section" id="service">
+        <div class="container text-center">
+            <p class="section-subtitle" data-translate="service_subtitle">Mit csinálok?</p>
+            <h6 class="section-title mb-6" data-translate="service_title">Szolgáltatások</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/pencil-case.svg" alt="Frontend fejlesztés szolgáltatások"
+                                class="icon">
+                            <h6 class="title" data-translate="service_1_title">Frontend Fejlesztés</h6>
+                            <p class="subtitle" data-translate="service_1_desc">Modern webalkalmazások HTML5, CSS3,
+                                JavaScript és TypeScript
+                                használatával, reszponzív design és legjobb gyakorlatok alkalmazásával.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/toolbox.svg" alt="Angular fejlesztés szolgáltatások" class="icon">
+                            <h6 class="title" data-translate="service_2_title">Angular Alkalmazások</h6>
+                            <p class="subtitle" data-translate="service_2_desc">Single Page alkalmazások Angular 17+
+                                technológiával, signals
+                                használatával, standalone komponensekkel és modern reaktív mintákkal.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/responsive.svg" alt="UI/UX implementáció szolgáltatások" class="icon">
+                            <h6 class="title" data-translate="service_3_title">UI/UX Implementáció</h6>
+                            <p class="subtitle" data-translate="service_3_desc">Professzionális felhasználói felületek
+                                Bootstrap, SCSS, CSS animációk és
+                                mobile-first reszponzív design használatával.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/analytics.svg" alt="Web teljesítmény optimalizálás szolgáltatások"
+                                class="icon">
+                            <h6 class="title" data-translate="service_4_title">Teljesítmény & Optimalizálás</h6>
+                            <p class="subtitle" data-translate="service_4_desc">Kód optimalizálás, build folyamatok,
+                                deployment stratégiák és
+                                teljesítmény monitorozás gyors, skálázható webalkalmazásokhoz.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div>
+    </section><!-- end of service section -->
+
+    <!-- portfolio section -->
+    <section class="section" id="portfolio">
+        <div class="container text-center">
+
+            <h6 class="section-title mb-6" data-translate="portfolio_title">Mini projektek</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="weatherApp/weatherapp.html" target="_blank" class="portfolio-card">
+                        <iframe src="weatherApp/weatherapp.html" class="portfolio-card-img" loading="lazy"
+                            scrolling="no" onclick="window.open('weatherApp/weatherapp.html', '_blank');"
+                            style="cursor: pointer;"></iframe>
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4 data-translate="portfolio_1_title">Időjárás Alkalmazás</h4>
+                                <p class="font-weight-normal" data-translate="portfolio_1_cat">Kategória: TypeScript Web
+                                    App</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="todo-app-build/" target="_blank" class="portfolio-card">
+                        <img src="assets/imgs/todo_app_screenshot.png" class="portfolio-card-img" loading="lazy">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4 data-translate="portfolio_2_title">TODO Alkalmazás</h4>
+                                <p class="font-weight-normal" data-translate="portfolio_2_cat">Kategória: Angular App
+                                </p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="landingPage/hiking.html" target="_blank" class="portfolio-card">
+                        <iframe src="landingPage/hiking.html" class="portfolio-card-img" loading="lazy"
+                            scrolling="no"></iframe>
+                        <!-- <img class="portfolio-card-img" src="assets/imgs/folio-3.jpg" class="img-responsive rounded"
+                            alt="Web design projekt példa"> -->
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h5>
+                                    <p class="font-weight-normal">Category: Web Templates</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section> <!-- end of portfolio section -->
+
+
+    <!-- section -->
+    <section class="section-sm bg-primary">
+        <!-- container -->
+        <div class="container text-center text-sm-left">
+            <!-- row -->
+            <div class="row align-items-center">
+                <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                    <h6 class="title text-light" data-translate="cta_title">Van egy projekt ötleted?</h6>
+                    <p class="m-0 text-light" data-translate="cta_desc">Szívesen meghallgatom az elképzeléseidet és
+                        segítek megvalósítani azokat!
+                    </p>
+                </div>
+                <div class="col-sm offset-sm-2 offset-md-3">
+                    <a href="#contact" class="btn btn-lg my-font btn-light rounded"
+                        data-translate="cta_button">Beszélgessünk róla!</a>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of section -->
+
+    <!-- learning experiences section -->
+    <section class="section" id="learning">
+        <div class="container text-center">
+            <p class="section-subtitle" data-translate="learning_subtitle">Hogyan jutottam el idáig?</p>
+            <h6 class="section-title mb-6" data-translate="learning_title">Tanulási utam</h6>
+
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-img-holder">
+                            <img src="assets/imgs/startup.svg" class="testimonial-card-img"
+                                alt="Frontend fejlesztés tanulás">
+                        </div>
+                        <div class="testimonial-card-body">
+                            <p class="testimonial-card-subtitle" data-translate="learning_1_desc">Az adminisztrációs
+                                tapasztalataim során
+                                rájöttem, hogy szeretek rendszerezett, logikus feladatokkal foglalkozni.
+                                Ez vezettet el a programozás világába.</p>
+                            <h6 class="testimonial-card-title" data-translate="learning_1_title">Karrier váltás</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-img-holder">
+                            <img src="assets/imgs/shipped.svg" class="testimonial-card-img" alt="Technológiai fejlődés">
+                        </div>
+                        <div class="testimonial-card-body">
+                            <p class="testimonial-card-subtitle" data-translate="learning_2_desc">HTML és CSS alapjaitól
+                                indulva, fokozatosan
+                                ismerkedtem meg a JavaScript-tel, majd az Angular keretrendszerrel.
+                                Minden új technológia új lehetőségeket nyitott meg.</p>
+                            <h6 class="testimonial-card-title" data-translate="learning_2_title">Technológiai fejlődés
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of container -->
+    </section> <!-- end of testimonial section -->
+
+    <!-- goals section -->
+    <section class="section" id="goals">
+        <!-- container -->
+        <div class="container text-center">
+            <p class="section-subtitle" data-translate="goals_subtitle">Merre tovább?</p>
+            <h6 class="section-title mb-6" data-translate="goals_title">Következő célok</h6>
+            <!-- goals-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/figma.svg" class="blog-card-img" alt="UI/UX Design tanulás">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title" data-translate="goals_1_title">UI/UX Design</h5>
+
+                    <p class="blog-card-caption">
+                        <a href="#" data-translate="goals_1_tag">📅 Rövidtávú cél</a>
+                        <a href="#"><i class="ti-eye"></i> Figma</a>
+                        <a href="#"><i class="ti-palette"></i> Design</a>
+                    </p>
+                    <p data-translate="goals_1_desc1">A felhasználói felületek tervezése legalább annyira fontos, mint a
+                        megvalósítás.
+                        Szeretném mélyebben megismerni a UX/UI design elveket és eszközeit.</p>
+
+                    <p><b data-translate="goals_1_desc2">Figma, Adobe XD, felhasználói élmény tervezés és dizájn
+                            rendszerek.</b>
+                    </p>
+                    <p data-translate="goals_1_desc3">A cél, hogy ne csak megvalósítani tudjam a terveket, hanem magam
+                        is képes legyek
+                        professzionális, felhasználóbarát interfészeket tervezni.</p>
+
+                </div>
+            </div><!-- end of goals wrapper -->
+
+            <!-- goals-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/computer-tower.svg" class="blog-card-img" alt="Backend fejlesztés tanulás">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title" data-translate="goals_2_title">Backend fejlesztés</h5>
+
+                    <p class="blog-card-caption">
+                        <a href="#" data-translate="goals_2_tag">📅 Hosszútávú cél</a>
+                        <a href="#"><i class="ti-server"></i> Node.js</a>
+                        <a href="#"><i class="ti-database"></i> Database</a>
+                    </p>
+
+                    <p data-translate="goals_2_desc1">A teljes stack fejlesztő szeretnék lenni. A frontend tudás mellett
+                        szükséges a backend oldal megértése is a komplett webalkalmazások készítéséhez.</p>
+
+                    <p><b data-translate="goals_2_desc2">Node.js, Express, adatbázisok (MongoDB/PostgreSQL), API
+                            fejlesztés.</b></p>
+
+                    <p data-translate="goals_2_desc3">Célom, hogy saját fullstack projekteket tudjak készíteni, ahol az
+                        adatok
+                        kezelésétől a felhasználói felületig minden az én kezem munkája.</p>
+
+                </div>
+            </div><!-- end of goals wrapper -->
+
+        </div><!-- end of container -->
+    </section><!-- end of goals section -->
+
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle" data-translate="contact_subtitle">Van kérdésed vagy projekt ötleted?</p>
+            <h6 class="section-title mb-5" data-translate="contact_title">Kapcsolat</h6>
+            <!-- contact form -->
+            <form action="https://formspree.io/f/xpwkrdjk" method="POST" class="contact-form col-md-10 col-lg-8 m-auto">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input type="text" name="name" class="form-control mb-2"
+                            data-translate-placeholder="contact_name" placeholder="Neved" required>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="email" name="email" class="form-control mb-2"
+                            data-translate-placeholder="contact_email" placeholder="Email címed" required>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="message" rows="6" class="form-control mb-2"
+                            data-translate-placeholder="contact_message"
+                            placeholder="Írj néhány sort a projekt ötletedről vagy tedd fel a kérdéseidet..."
+                            required></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" data-translate-value="contact_submit" value="Üzenet küldése"
+                            class="btn btn-outline-primary rounded">
+                    </div>
+                </div>
+            </form><!-- end of contact form -->
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">
+            <p class="mb-0">Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy; Szücs Gergely - Frontend Fejlesztő
+            </p>
+            <!-- <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+            </div> -->
+        </footer>
+    </div> <!-- end of page footer -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/function.js"></script>
+
+</body>
+
+</html>

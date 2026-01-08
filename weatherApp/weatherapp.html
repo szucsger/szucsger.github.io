@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="weatherapp.css">
+</head>
+
+<body>
+
+    <div class="container bg-dark">
+        <h1 class="text-center pt-3">Weather Forecast</h1>
+        <div class="row m-1">
+            <div class="col-12 col-lg-8 ">
+                <div class="position-relative">
+                    <input type="text" name="searchCity" id="searchInput" placeholder="Start typing the city name"
+                        class="form-control mt-5 bg-secondary">
+                    <!-- City suggestions dropdown -->
+                    <div id="cityDropdown" class="list-group position-absolute w-100"
+                        style="z-index: 1000; display: none;">
+                        <!-- Itt jelennek meg a város javaslatok -->
+                    </div>
+                </div>
+                <div class="card" id="currentWeather"></div>
+                <div class="card" id="hourlyForecast">
+                    <div class="card-body">
+                        <h6 class="card-title"></h6>
+                        <div class="hourly-scroll d-flex overflow-auto">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="airCondition"></div>
+            </div>
+            <div class="col-12 col-lg-4 card mt-5" id="sevenDayForecast"></div>
+        </div>
+
+    </div>
+
+
+    </div>
+
+    <script src="weatherapp.js"></script>
+</body>
+
+</html>
