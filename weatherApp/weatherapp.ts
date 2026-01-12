@@ -245,8 +245,9 @@ function displayAirQuality(airData: any) {
 
 // Display 7-day forecast
 function displaySevenDayForecast(forecastData: any) {
-  const sevenDayCard = document.querySelector<HTMLDivElement>("#sevenDayForecast");
-  
+  const sevenDayCard =
+    document.querySelector<HTMLDivElement>("#sevenDayForecast");
+
   if (!sevenDayCard) return;
 
   // Group forecast data by day (every 8th item = 24 hours)
@@ -263,7 +264,7 @@ function displaySevenDayForecast(forecastData: any) {
 
   dailyData.slice(0, 7).forEach((day: any) => {
     const date = new Date(day.dt * 1000);
-    const dayName = date.toLocaleDateString("hu-HU", { weekday: "short" });
+    const dayName = date.toLocaleDateString("en-EN", { weekday: "short" });
     const dayNumber = date.getDate();
     const icon = getWeatherIcon(day.weather[0].main);
     const temp = Math.round(day.main.temp);
